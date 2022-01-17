@@ -1,0 +1,836 @@
+{
+    "dto":
+    {
+        "result":
+        {
+            "result": "SUCCESS"
+        },
+        "dati-completi-oe":
+        {
+            "piva": null,
+            "codiceFiscale": "03312030659",
+            "dataIscrizioneRegImprese": "2020-10-01",
+            "dataTermineSoc": null,
+            "estremiIscrizioneCassaEdile": "da alfa a omega",
+            "estremiIscrizioneINAIL": "da 0 a 9",
+            "estremiIscrizioneINPS": null,
+            "idOE": "444",
+            "iscrizioneCassaEdile": "1",
+            "iscrizioneINAIL": "1",
+            "iscrizioneINPS": "1",
+            "listaAlbi":
+            [
+                {
+                    "cognomeProfessionista": "rossi",
+                    "codDenominazioneCassa": null,
+                    "codDescrizioneAlbo": "AGΩROTE",
+                    "idAlbo": "443",
+                    "indirizzo": "Roma",
+                    "nomeProfessionista": "mario",
+                    "numeroIscrizione": 2341234234,
+                    "numeroIscrizioneCassa": "23874624Ω598"
+                },
+                {
+                    "cognomeProfessionista": "verdi",
+                    "codDenominazioneCassa": null,
+                    "codDescrizioneAlbo": "ARCHIT",
+                    "idAlbo": "445",
+                    "indirizzo": "Roma",
+                    "nomeProfessionista": "paolo",
+                    "numeroIscrizione": 9876,
+                    "numeroIscrizioneCassa": "54321"
+                }
+            ],
+            "listaConsorzi":
+            [
+                {
+                    "codiceFiscale": "78945612300",
+                    "flgExist": true,
+                    "idOe": "358",
+                    "ragioneSociale": null,
+                    "stato": "NONREG",
+                    "tipologia": "000002"
+                },
+                {
+                    "codiceFiscale": null,
+                    "flgExist": true,
+                    "idOe": "354",
+                    "ragioneSociale": "new nonΩ censito",
+                    "stato": "NONREΩG",
+                    "tipologia": "00000Ω3"
+                },
+                {
+                    "codiceFiscale": "CBCDTD74C09D123A",
+                    "flgExist": true,
+                    "idOe": "360",
+                    "ragioneSociale": null,
+                    "stato": "NONREG",
+                    "tipologia": "000001"
+                }
+            ],
+            "listaConsorziate":
+            [
+                {
+                    "codiceFiscale": null,
+                    "flgExist": true,
+                    "idOe": "206",
+                    "ragioneSociale": null,
+                    "stato": "NONREG"
+                },
+                {
+                    "codiceFiscale": "FRNMRC95C09H502O",
+                    "flgExist": true,
+                    "idOe": "207",
+                    "ragioneSociale": "TEST",
+                    "stato": "NONREG"
+                }
+            ],
+            "motiviEsclusione":
+            {
+                "art80SezioneA":
+                {
+                    "desA307effettivaDissociazione": "se le sentenze di condanne campo",
+                    "flaA304RisarcimentoDanno": "1",
+                    "flagA302AttenuanteCollaborazione": "1",
+                    "flg306MisureTecniche": "1",
+                    "flgA301MisureAffidabilita": "1",
+                    "flgA303PenaDetentiva": "1",
+                    "flgA305ImpegnoRisarcimentoDanno": "1",
+                    "idSezioneA": "382"
+                },
+                "art80SezioneBContributiPrevidenziali":
+                {
+                    "datB2012DataSentenza": "2021-10-06",
+                    "desB204InformazioniDettagliate": "test",
+                    "flaB2011Decisione": "1",
+                    "flgB101TipologiaPagamento": "C",
+                    "flgB201Inottemperanza": "0",
+                    "flgB204OttemperamentoObblighi": "1",
+                    "idSezioneB": "327",
+                    "nazioneB101": "IT",
+                    "numB101Importo": "213",
+                    "numB20231PeriodoEsclusioneAnni": "3 ",
+                    "numB20232PeriodoEsclusioneMesi": "2 ",
+                    "numB20233PeriodoEsclusioneGiorni": "1 "
+                },
+                "art80SezioneBImposteTasse":
+                {
+                    "datB2012DataSentenza": "",
+                    "desB203Testo": "test",
+                    "desB204InformazioniDettagliate": "asasdasdasd",
+                    "flaB2011Decisione": "0",
+                    "flgB101TipologiaPagamento": "T",
+                    "flgB201Inottemperanza": "1",
+                    "flgB204OttemperamentoObblighi": "1",
+                    "idSezioneB": "328",
+                    "nazioneB101": "IT",
+                    "numB101Importo": "152"
+                },
+                "art80SezioneC":
+                {
+                    "desC105": "test ocumentazione pertinente",
+                    "desC202": "estremi proved testo",
+                    "desC301": "la mia tipologia",
+                    "desC303": "docum pertinente",
+                    "desC401": "misure adottate",
+                    "desC501": "info dettagliate",
+                    "flgC101": "1",
+                    "flgC102": "1",
+                    "flgC103": "1",
+                    "flgC104": "1",
+                    "flgC105": "1",
+                    "flgC201": "1",
+                    "flgC202": "1",
+                    "flgC203": "0",
+                    "flgC204": "1",
+                    "flgC205": "1",
+                    "flgC206": "1",
+                    "flgC207": "1",
+                    "flgC208": "0",
+                    "flgC301": "1",
+                    "flgC302": "1",
+                    "flgC3021": "1",
+                    "flgC3022": "1",
+                    "flgC303": "1",
+                    "flgC401": "1",
+                    "flgC501": "1",
+                    "flgC601": "0",
+                    "flgC602": "1",
+                    "idSezioneC": "303"
+                },
+                "art80SezioneD":
+                {
+                    "datD104": "2021-10-07",
+                    "desAltro105": "test altro non è tenuto",
+                    "desAutoritaD104": "test",
+                    "flgD101": "1",
+                    "flgD102": "1",
+                    "flgD103": "1",
+                    "flgD104": "1",
+                    "flgD105": "2",
+                    "flgD106": "1",
+                    "flgD1061": "1",
+                    "flgD1062": "0",
+                    "flgD107": "0",
+                    "flgD108": "0",
+                    "flgRimossaD104": "1",
+                    "idSezioneD": "304",
+                    "numD105": "12"
+                },
+                "listaDocumenti":
+                [
+                    {
+                        "autoritaOrganismoEmanazione": null,
+                        "flgFaseIscrizioneAlbo": "S",
+                        "idDocum": "203",
+                        "indirizzoWeb": null,
+                        "riferimentoDocumentazione": "test2",
+                        "tipoDocum": "B101"
+                    },
+                    {
+                        "autoritaOrganismoEmanazione": null,
+                        "flgFaseIscrizioneAlbo": "S",
+                        "idDocum": "197",
+                        "indirizzoWeb": "www.indirizzo-Ωweb-1.com",
+                        "riferimentoDocumentazione": "riferimento1",
+                        "tipoDocum": "A101"
+                    },
+                    {
+                        "autoritaOrganismoEmanazione": null,
+                        "flgFaseIscrizioneAlbo": "S",
+                        "idDocum": "195",
+                        "indirizzoWeb": "www.documeelettrΩsez2222A.com",
+                        "riferimentoDocumentazione": "riferimento2",
+                        "tipoDocum": "A306"
+                    },
+                    {
+                        "autoritaOrganismoEmanazione": "giudice",
+                        "flgFaseIscrizioneAlbo": "S",
+                        "idDocum": "198",
+                        "indirizzoWeb": "www.testsito.com",
+                        "riferimentoDocumentazione": "riferimento documen",
+                        "tipoDocum": "B101"
+                    },
+                    {
+                        "autoritaOrganismoEmanazione": "test1",
+                        "flgFaseIscrizioneAlbo": "S",
+                        "idDocum": "205",
+                        "indirizzoWeb": null,
+                        "riferimentoDocumentazione": "test2",
+                        "tipoDocum": "B101"
+                    },
+                    {
+                        "autoritaOrganismoEmanazione": "test",
+                        "flgFaseIscrizioneAlbo": "S",
+                        "idDocum": "218",
+                        "indirizzoWeb": "www.documento.com",
+                        "riferimentoDocumentazione": "22",
+                        "tipoDocum": "C105"
+                    },
+                    {
+                        "autoritaOrganismoEmanazione": null,
+                        "flgFaseIscrizioneAlbo": "S",
+                        "idDocum": "219",
+                        "indirizzoWeb": "www.iltesto.com",
+                        "riferimentoDocumentazione": "riferi",
+                        "tipoDocum": "C303"
+                    },
+                    {
+                        "autoritaOrganismoEmanazione": null,
+                        "flgFaseIscrizioneAlbo": "N",
+                        "idDocum": "211",
+                        "indirizzoWeb": "www.primoflag.com",
+                        "riferimentoDocumentazione": "test2",
+                        "tipoDocum": "D101"
+                    },
+                    {
+                        "autoritaOrganismoEmanazione": "test",
+                        "flgFaseIscrizioneAlbo": "N",
+                        "idDocum": "212",
+                        "indirizzoWeb": "www.primoflag2.com",
+                        "riferimentoDocumentazione": "test",
+                        "tipoDocum": "D101"
+                    },
+                    {
+                        "autoritaOrganismoEmanazione": "test",
+                        "flgFaseIscrizioneAlbo": "S",
+                        "idDocum": "213",
+                        "indirizzoWeb": "www.secondoflag.com",
+                        "riferimentoDocumentazione": "test",
+                        "tipoDocum": "D102"
+                    },
+                    {
+                        "autoritaOrganismoEmanazione": "test",
+                        "flgFaseIscrizioneAlbo": "S",
+                        "idDocum": "214",
+                        "indirizzoWeb": "www.terzoflag.com",
+                        "riferimentoDocumentazione": "teest",
+                        "tipoDocum": "D103"
+                    },
+                    {
+                        "autoritaOrganismoEmanazione": "test",
+                        "flgFaseIscrizioneAlbo": "S",
+                        "idDocum": "215",
+                        "indirizzoWeb": "www.quartoflag.com",
+                        "riferimentoDocumentazione": "feet",
+                        "tipoDocum": "D104"
+                    },
+                    {
+                        "autoritaOrganismoEmanazione": null,
+                        "flgFaseIscrizioneAlbo": "S",
+                        "idDocum": "216",
+                        "indirizzoWeb": null,
+                        "riferimentoDocumentazione": "vest",
+                        "tipoDocum": "D105"
+                    },
+                    {
+                        "autoritaOrganismoEmanazione": "tefce",
+                        "flgFaseIscrizioneAlbo": "S",
+                        "idDocum": "217",
+                        "indirizzoWeb": "www.sestodocumento.com",
+                        "riferimentoDocumentazione": "dffdf",
+                        "tipoDocum": "D106"
+                    }
+                ]
+            },
+            "numIscrizioneRegImprese": "13579",
+            "oggettoSociale": "Social Object SRL",
+            "pIva": "03312030657",
+            "pec": "adolfo.brusco@pec.it",
+            "prefissoFax": "PREFIT",
+            "prefissoTelefono": "PREFIT",
+            "ragioneSociale": "Ing. lkklkl werrewew",
+            "rapprDirTecniciCessati":
+            [
+                {
+                    "idPersona": "825",
+                    "sesso": "M",
+                    "nazioneNascita": "GB",
+                    "dataNascita": "1974-01-08",
+                    "citta": "pippo",
+                    "cognome": "Chalker",
+                    "nome": "Steven James",
+                    "codiceFiscale": "CHLSVN74A08Z114G",
+                    "tipoCaricaSociale": "LEGRAP",
+                    "dataProcura": "",
+                    "firmatario": "N",
+                    "datiCondanne":
+                    {
+                        "presenzaCondanneArt80": "0",
+                        "listaCondanneArt80":
+                        [],
+                        "presenzaCondanneNoArt80": "0",
+                        "listaCondanneNoArt80":
+                        []
+                    },
+                    "dataCessazione": "2020-06-30",
+                    "isPersonaGiuridica": "N"
+                },
+                {
+                    "idPersona": "826",
+                    "sesso": "M",
+                    "nazioneNascita": "US",
+                    "dataNascita": "1962-10-17",
+                    "citta": "new york",
+                    "cognome": "Monshaw",
+                    "nome": "Andrew Phillip",
+                    "codiceFiscale": "MNSNRW62R17Z404M",
+                    "tipoCaricaSociale": "CONDEL",
+                    "dataProcura": "",
+                    "firmatario": "N",
+                    "datiCondanne":
+                    {
+                        "presenzaCondanneArt80": "0",
+                        "listaCondanneArt80":
+                        [],
+                        "presenzaCondanneNoArt80": "0",
+                        "listaCondanneNoArt80":
+                        []
+                    },
+                    "dataCessazione": "2020-06-30",
+                    "isPersonaGiuridica": "N"
+                },
+                {
+                    "idPersona": "827",
+                    "sesso": "M",
+                    "nazioneNascita": "IT",
+                    "provinciaNascita": "015",
+                    "comuneNascita": "015146",
+                    "dataNascita": "1971-05-14",
+                    "cognome": "Lanza ",
+                    "nome": "Marco Abramo",
+                    "codiceFiscale": "LNZMCB71E14F205O",
+                    "tipoCaricaSociale": "MOPDVS",
+                    "dataProcura": "",
+                    "firmatario": "N",
+                    "datiCondanne":
+                    {
+                        "presenzaCondanneArt80": "0",
+                        "listaCondanneArt80":
+                        [],
+                        "presenzaCondanneNoArt80": "0",
+                        "listaCondanneNoArt80":
+                        []
+                    },
+                    "dataCessazione": "2020-09-17",
+                    "isPersonaGiuridica": "N"
+                },
+                {
+                    "idPersona": "1164",
+                    "sesso": "M",
+                    "nazioneNascita": "IT",
+                    "provinciaNascita": "005",
+                    "comuneNascita": "005005",
+                    "dataNascita": "1998-11-05",
+                    "cognome": "FRANZU",
+                    "nome": "marco",
+                    "codiceFiscale": "frnmrc95c09h501a",
+                    "tipoCaricaSociale": "MOPDVS",
+                    "dataProcura": "",
+                    "firmatario": "N",
+                    "datiCondanne":
+                    {
+                        "presenzaCondanneArt80": "0",
+                        "listaCondanneArt80":
+                        [],
+                        "presenzaCondanneNoArt80": "0",
+                        "listaCondanneNoArt80":
+                        []
+                    },
+                    "dataCessazione": "2021-11-03",
+                    "isPersonaGiuridica": "N"
+                }
+            ],
+            "rapprDirTecniciInCarica":
+            [
+                {
+                    "idPersona": "824",
+                    "sesso": "M",
+                    "nazioneNascita": "IT",
+                    "provinciaNascita": "042",
+                    "comuneNascita": "042003",
+                    "dataNascita": "1980-03-22",
+                    "cognome": "ert",
+                    "nome": "ert",
+                    "codiceFiscale": "frnmrc95c09h501a",
+                    "tipoCaricaSociale": "DIRTEC",
+                    "dataProcura": "",
+                    "firmatario": "N",
+                    "datiCondanne":
+                    {
+                        "presenzaCondanneArt80": "0",
+                        "listaCondanneArt80":
+                        [],
+                        "presenzaCondanneNoArt80": "1",
+                        "listaCondanneNoArt80":
+                        [
+                            {
+                                "idCondanna": "207",
+                                "dataCondanna": "2021-06-04",
+                                "durataAnni": 2,
+                                "durataMesi": 3,
+                                "durataGiorni": 4,
+                                "motivi": "test",
+                                "durataEsclusioneAnni": 22,
+                                "durataEsclusioneMesi": 1,
+                                "durataEsclusioneGiorni": 2,
+                                "flgReato": "0",
+                                "flgReatoAltraCondanna": "0",
+                                "scaduta": "false"
+                            }
+                        ]
+                    },
+                    "dataCessazione": "",
+                    "isPersonaGiuridica": "N"
+                },
+                {
+                    "idPersona": "829",
+                    "sesso": "M",
+                    "nazioneNascita": "AL",
+                    "dataNascita": "2004-06-01",
+                    "citta": "firenze",
+                    "cognome": "andrea",
+                    "nome": "rosso",
+                    "codiceFiscale": "frnmrc95c09h501a",
+                    "tipoCaricaSociale": "PROCUR",
+                    "tipoProcura": "SPECIA",
+                    "numeroProcura": "23412341234",
+                    "dataProcura": "2021-10-13",
+                    "firmatario": "S",
+                    "datiCondanne":
+                    {
+                        "presenzaCondanneArt80": "1",
+                        "listaCondanneArt80":
+                        [
+                            {
+                                "idCondanna": "223",
+                                "dataCondanna": "1995-10-01",
+                                "durataAnni": 1,
+                                "durataMesi": 2,
+                                "durataGiorni": 3,
+                                "reato": "REATBB",
+                                "motivi": "test motivi condanna",
+                                "durataEsclusioneAnni": 2,
+                                "durataEsclusioneMesi": 1,
+                                "durataEsclusioneGiorni": 2,
+                                "flgReato": "0",
+                                "flgReatoAltraCondanna": "0",
+                                "scaduta": "false"
+                            }
+                        ],
+                        "presenzaCondanneNoArt80": "1",
+                        "listaCondanneNoArt80":
+                        [
+                            {
+                                "idCondanna": "224",
+                                "dataCondanna": "2021-10-01",
+                                "durataMesi": 2,
+                                "durataGiorni": 1,
+                                "motivi": "test",
+                                "durataEsclusioneAnni": 1,
+                                "durataEsclusioneMesi": 2,
+                                "durataEsclusioneGiorni": 1,
+                                "flgReato": "0",
+                                "flgReatoAltraCondanna": "0",
+                                "scaduta": "false"
+                            }
+                        ]
+                    },
+                    "dataCessazione": "",
+                    "isPersonaGiuridica": "N"
+                },
+                {
+                    "idPersona": "804",
+                    "sesso": "M",
+                    "nazioneNascita": "GB",
+                    "dataNascita": "1974-01-08",
+                    "citta": "ddfgdfg",
+                    "cognome": "Chalker",
+                    "nome": "Steven James",
+                    "codiceFiscale": "CHLSVN74A08Z114D",
+                    "tipoCaricaSociale": "LEGRAP",
+                    "dataProcura": "",
+                    "firmatario": "N",
+                    "datiCondanne":
+                    {
+                        "presenzaCondanneArt80": "0",
+                        "listaCondanneArt80":
+                        [],
+                        "presenzaCondanneNoArt80": "0",
+                        "listaCondanneNoArt80":
+                        []
+                    },
+                    "dataCessazione": "",
+                    "isPersonaGiuridica": "N"
+                },
+                {
+                    "idPersona": "805",
+                    "sesso": "M",
+                    "nazioneNascita": "US",
+                    "dataNascita": "1962-10-17",
+                    "citta": "dfgdfg",
+                    "cognome": "Monshaw",
+                    "nome": "Andrew Phillip",
+                    "codiceFiscale": "MNSNRW62R17Z404Q",
+                    "tipoCaricaSociale": "CONDEL",
+                    "dataProcura": "",
+                    "firmatario": "N",
+                    "datiCondanne":
+                    {
+                        "presenzaCondanneArt80": "0",
+                        "listaCondanneArt80":
+                        [],
+                        "presenzaCondanneNoArt80": "0",
+                        "listaCondanneNoArt80":
+                        []
+                    },
+                    "dataCessazione": "",
+                    "isPersonaGiuridica": "N"
+                },
+                {
+                    "idPersona": "806",
+                    "sesso": "M",
+                    "nazioneNascita": "IT",
+                    "provinciaNascita": "015",
+                    "comuneNascita": "015146",
+                    "dataNascita": "1971-05-14",
+                    "cognome": "Lanza ",
+                    "nome": "Marco Abramo",
+                    "codiceFiscale": "LNZMCB71E14F205O",
+                    "tipoCaricaSociale": "MOPDVS",
+                    "dataProcura": "",
+                    "firmatario": "N",
+                    "datiCondanne":
+                    {
+                        "presenzaCondanneArt80": "0",
+                        "listaCondanneArt80":
+                        [],
+                        "presenzaCondanneNoArt80": "0",
+                        "listaCondanneNoArt80":
+                        []
+                    },
+                    "dataCessazione": "",
+                    "isPersonaGiuridica": "N"
+                },
+                {
+                    "idPersona": "807",
+                    "sesso": "F",
+                    "nazioneNascita": "IT",
+                    "provinciaNascita": "091",
+                    "comuneNascita": "091051",
+                    "dataNascita": "1967-08-01",
+                    "cognome": "Tula ",
+                    "nome": "Piera",
+                    "codiceFiscale": "TLUPRI67M41F979O",
+                    "tipoCaricaSociale": "MOPDVS",
+                    "dataProcura": "",
+                    "firmatario": "N",
+                    "datiCondanne":
+                    {
+                        "presenzaCondanneArt80": "0",
+                        "listaCondanneArt80":
+                        [],
+                        "presenzaCondanneNoArt80": "0",
+                        "listaCondanneNoArt80":
+                        []
+                    },
+                    "dataCessazione": "",
+                    "isPersonaGiuridica": "N"
+                },
+                {
+                    "idPersona": "1147",
+                    "sesso": "M",
+                    "nazioneNascita": "IT",
+                    "provinciaNascita": "042",
+                    "comuneNascita": "042008",
+                    "dataNascita": "2000-11-02",
+                    "cognome": "franz",
+                    "nome": "marcio",
+                    "codiceFiscale": "frnmrc95c09h501a",
+                    "tipoCaricaSociale": "LEGRAP",
+                    "dataProcura": "",
+                    "firmatario": "N",
+                    "datiCondanne":
+                    {
+                        "presenzaCondanneArt80": "0",
+                        "listaCondanneArt80":
+                        [],
+                        "presenzaCondanneNoArt80": "0",
+                        "listaCondanneNoArt80":
+                        []
+                    },
+                    "dataCessazione": "",
+                    "isPersonaGiuridica": "N"
+                },
+                {
+                    "idPersona": "423",
+                    "sesso": "M",
+                    "nazioneNascita": "IT",
+                    "provinciaNascita": "048",
+                    "comuneNascita": "048039",
+                    "dataNascita": "1970-01-01",
+                    "cognome": "Brillante",
+                    "nome": "Gioia",
+                    "codiceFiscale": "brlggg70y12j667p",
+                    "tipoCaricaSociale": "TITOLA",
+                    "dataProcura": "",
+                    "firmatario": "S",
+                    "datiCondanne":
+                    {
+                        "presenzaCondanneArt80": "0",
+                        "listaCondanneArt80":
+                        [],
+                        "presenzaCondanneNoArt80": "0",
+                        "listaCondanneNoArt80":
+                        []
+                    },
+                    "dataCessazione": "",
+                    "isPersonaGiuridica": "N"
+                },
+                {
+                    "idPersona": "1213",
+                    "sesso": "F",
+                    "nazioneNascita": "IT",
+                    "provinciaNascita": "005",
+                    "comuneNascita": "005007",
+                    "dataNascita": "1999-12-02",
+                    "cognome": "donna",
+                    "nome": "rosa",
+                    "codiceFiscale": "dnnrsa95c09h501o",
+                    "tipoCaricaSociale": "DIRTEC",
+                    "dataProcura": "",
+                    "firmatario": "N",
+                    "datiCondanne":
+                    {
+                        "presenzaCondanneArt80": "0",
+                        "listaCondanneArt80":
+                        [],
+                        "presenzaCondanneNoArt80": "0",
+                        "listaCondanneNoArt80":
+                        []
+                    },
+                    "dataCessazione": "",
+                    "isPersonaGiuridica": "N"
+                },
+                {
+                    "idPersona": "1127",
+                    "sesso": "M",
+                    "nazioneNascita": "IT",
+                    "dataNascita": "",
+                    "codiceFiscale": "86334519757",
+                    "tipoCaricaSociale": "SAOMAG",
+                    "dataProcura": "",
+                    "firmatario": "N",
+                    "datiCondanne":
+                    {
+                        "presenzaCondanneArt80": "0",
+                        "listaCondanneArt80":
+                        [],
+                        "presenzaCondanneNoArt80": "0",
+                        "listaCondanneNoArt80":
+                        []
+                    },
+                    "dataCessazione": "",
+                    "isPersonaGiuridica": "S",
+                    "ragioneSociale": "test spa",
+                    "partitaIva": "86334519757"
+                },
+                {
+                    "idPersona": "1122",
+                    "sesso": "M",
+                    "nazioneNascita": "IT",
+                    "provinciaNascita": "072",
+                    "comuneNascita": "072004",
+                    "dataNascita": "1993-11-10",
+                    "cognome": "franzese",
+                    "nome": "marco",
+                    "codiceFiscale": "frnmrd95c04h301o",
+                    "tipoCaricaSociale": "PROCUR",
+                    "tipoProcura": "GENERA",
+                    "numeroProcura": "123345",
+                    "dataProcura": "2021-12-02",
+                    "firmatario": "S",
+                    "datiCondanne":
+                    {
+                        "presenzaCondanneArt80": "0",
+                        "listaCondanneArt80":
+                        [],
+                        "presenzaCondanneNoArt80": "0",
+                        "listaCondanneNoArt80":
+                        []
+                    },
+                    "dataCessazione": "",
+                    "isPersonaGiuridica": "N"
+                },
+                {
+                    "idPersona": "1484",
+                    "nazioneNascita": "IT",
+                    "dataNascita": "",
+                    "codiceFiscale": "GWCNLM80B52Z524T",
+                    "tipoCaricaSociale": "PROCUR",
+                    "tipoProcura": "GENERA",
+                    "numeroProcura": "123",
+                    "dataProcura": "2022-01-01",
+                    "firmatario": "N",
+                    "datiCondanne":
+                    {
+                        "presenzaCondanneArt80": "0",
+                        "listaCondanneArt80":
+                        [],
+                        "presenzaCondanneNoArt80": "0",
+                        "listaCondanneNoArt80":
+                        []
+                    },
+                    "dataCessazione": "",
+                    "isPersonaGiuridica": "S",
+                    "ragioneSociale": "Persona Giuridica Procuratore",
+                    "partitaIva": "12345678900"
+                },
+                {
+                    "idPersona": "1305",
+                    "nazioneNascita": "IT",
+                    "dataNascita": "",
+                    "codiceFiscale": "ESB88018098",
+                    "tipoCaricaSociale": "DIRTEC",
+                    "dataProcura": "",
+                    "firmatario": "N",
+                    "datiCondanne":
+                    {
+                        "presenzaCondanneArt80": "0",
+                        "listaCondanneArt80":
+                        [],
+                        "presenzaCondanneNoArt80": "0",
+                        "listaCondanneNoArt80":
+                        []
+                    },
+                    "dataCessazione": "",
+                    "isPersonaGiuridica": "S",
+                    "ragioneSociale": "test",
+                    "partitaIva": "32132132121"
+                },
+                {
+                    "idPersona": "1123",
+                    "sesso": "M",
+                    "nazioneNascita": "IT",
+                    "dataNascita": "",
+                    "codiceFiscale": "frnmrc95c09h502q",
+                    "tipoCaricaSociale": "SAOMAG",
+                    "dataProcura": "",
+                    "firmatario": "N",
+                    "datiCondanne":
+                    {
+                        "presenzaCondanneArt80": "0",
+                        "listaCondanneArt80":
+                        [],
+                        "presenzaCondanneNoArt80": "0",
+                        "listaCondanneNoArt80":
+                        []
+                    },
+                    "dataCessazione": "",
+                    "isPersonaGiuridica": "S",
+                    "ragioneSociale": "persona giuridica spa",
+                    "partitaIva": "234234234242"
+                }
+            ],
+            "sedePrincipale":
+            {
+                "cap": "00100",
+                "citta": "101002",
+                "idIndirizzo": "413",
+                "indirizzo": "via re",
+                "nazione": "IT",
+                "ncivico": "2",
+                "provincia": "101"
+            },
+            "sedeRegistroImprese": "Roma",
+            "sediSecondarie":
+            [
+                {
+                    "cap": "00567",
+                    "citta": "058003",
+                    "idIndirizzo": "1214",
+                    "indirizzo": "Via Pluto",
+                    "nazione": "IT",
+                    "ncivico": "33",
+                    "provincia": "058"
+                },
+                {
+                    "cap": "00234",
+                    "citta": "058036",
+                    "idIndirizzo": "1253",
+                    "indirizzo": "via pippo",
+                    "nazione": "IT",
+                    "ncivico": "32",
+                    "provincia": "058"
+                }
+            ],
+            "telefono": "54545454545",
+            "termineSocIndeterminato": false,
+            "tipoConsorzio": "000001",
+            "tipoImpresa": "N",
+            "tipoOE": "OE0004",
+            "hasCondanneScadute": "false",
+            "tipoStatoLavor": "OEBASE"
+        }
+    }
+}
