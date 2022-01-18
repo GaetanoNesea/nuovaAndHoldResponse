@@ -13,7 +13,7 @@ export class RichiestaService {
     let newobj = !!obj ? obj : obj2;
 
     for (const objKey in newobj) {
-      if (obj2[objKey] ) {
+      if (obj2[objKey]) {
         switch (typeof newobj[objKey]) {
           case 'undefined':
             break;
@@ -56,7 +56,6 @@ export class RichiestaService {
       }
     }
   }
-
 
 
   constructor(
@@ -102,7 +101,7 @@ export class RichiestaService {
            * altrimenti eliminiamo la stessa dal secondo array
            */
           // @ts-ignore
-          if (responseOriginale[keyResponseOriginale] && responseNuova[keyResponseOriginale]) {
+          if (!!responseOriginale[keyResponseOriginale] && !!responseNuova[keyResponseOriginale]) {
             /**
              * Prima valutiamo se abbiamo un Array oppure un object
              */
@@ -148,7 +147,7 @@ export class RichiestaService {
                     }
                     /** Restituisce item modificato oppure a null */
                     return item;
-                  }else{
+                  } else {
                     /** Nel caso che l'item è una lista */
                     return item;
                   }
@@ -161,17 +160,24 @@ export class RichiestaService {
               newItemModifica = newItemModifica.map(newItem => RichiestaService._nuovoVecchio(null, newItem));
 
               /** Modifichiamo le responseOriginale e con la lista modificata */
-              responseOriginale = {...responseOriginale, [keyResponseOriginale]: [...arrayModificato.filter(itemModificato => !!itemModificato), ...newItemModifica]};
+              responseOriginale = {
+                ...responseOriginale,
+                [keyResponseOriginale]: [...arrayModificato.filter(itemModificato => !!itemModificato), ...newItemModifica]
+              };
             } else {
               switch (typeof responseOriginale[keyResponseOriginale]) {
                 case 'undefined':
-
                   break;
                 case 'object':
                   // this._forItem(responseOriginale[keyResponseOriginale]);
                   // @ts-ignore
                   const newObj = RichiestaService._nuovoVecchio(responseOriginale[keyResponseOriginale], responseNuova[keyResponseOriginale]);
-                  console.log(newObj);
+                  // console.log(newObj);
+                  responseOriginale = {
+                    ...responseOriginale, [keyResponseOriginale]: {
+                      ...newObj
+                    }
+                  };
 
                   break;
                 case 'boolean':
@@ -209,9 +215,4 @@ export class RichiestaService {
     );
   }
 
-  private _forItem<T>(responseOriginaleElement: T) {
-    for (const responseOriginaleElementKey in responseOriginaleElement) {
-
-    }
-  }
 }
