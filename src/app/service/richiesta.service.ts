@@ -13,13 +13,35 @@ export class RichiestaService {
     let newobj = !!obj ? obj : obj2;
 
     for (const objKey in newobj) {
-      if (obj2[objKey]) {
-        newobj = {
-          ...newobj, [objKey]: {
-            Vecchio: !!obj ? obj[objKey] : null,
-            Nuovo: obj2[objKey]
-          }
-        };
+      if (obj2[objKey] ) {
+        switch (typeof newobj[objKey]) {
+          case 'undefined':
+            break;
+          case 'object':
+            // console.log(`passa da qui per ${objKey}`);
+            const format = RichiestaService._nuovoVecchio(newobj[objKey], obj2[objKey]);
+            newobj[objKey] = {
+              ...format
+            };
+            // console.log(format);
+            break;
+          case 'boolean':
+          case 'number':
+          case 'string':
+            newobj = {
+              ...newobj, [objKey]: {
+                Vecchio: !!obj ? obj[objKey] : null,
+                Nuovo: obj2[objKey]
+              }
+            };
+            break;
+          case 'function':
+            break;
+          case 'symbol':
+            break;
+          case 'bigint':
+            break;
+        }
       } else {
         delete newobj[objKey];
       }
@@ -34,6 +56,8 @@ export class RichiestaService {
       }
     }
   }
+
+
 
   constructor(
     readonly http: HttpClient
@@ -96,14 +120,15 @@ export class RichiestaService {
 
                   if (!isArray(item)) {
 
-                    /** troviamo la key all'interno del item */
+                    /** Troviamo la key all'interno del item */
                     key = RichiestaService._keyId(item);
 
                     /** Cerchiamo nella seconda response se esiste un item con lo stesso id, significa ch'è stato modificato */
                       // @ts-ignore
                     const itemModificato = responseNuova[keyResponseOriginale].find((itemSecondo) => itemSecondo[key] === item[key]);
 
-                    /** All'inizio abbiamo creato una lista vuota, in questo caso verifichiamo che la lista è vuota, nel caso che lo fosse la
+                    /**
+                     * All'inizio abbiamo creato una lista vuota, in questo caso verifichiamo che la lista è vuota, nel caso che lo fosse la
                      * andiamo a riempire con il primo filtro dalla secondaResponse e successivamente elimineremo altri elementi
                      */
                     if (newItemModifica.length === 0) {
@@ -138,16 +163,39 @@ export class RichiestaService {
               /** Modifichiamo le responseOriginale e con la lista modificata */
               responseOriginale = {...responseOriginale, [keyResponseOriginale]: [...arrayModificato.filter(itemModificato => !!itemModificato), ...newItemModifica]};
             } else {
-              /**
-               * In questo caso abbiamo un object da valutare, inserendo un nuovo elemento o un vecchio elemento
-               */
-              responseOriginale = {
-                ...responseOriginale, [keyResponseOriginale]: {
-                  Vecchio: responseOriginale[keyResponseOriginale],
+              switch (typeof responseOriginale[keyResponseOriginale]) {
+                case 'undefined':
+
+                  break;
+                case 'object':
+                  // this._forItem(responseOriginale[keyResponseOriginale]);
                   // @ts-ignore
-                  Nuovo: responseNuova[keyResponseOriginale]
-                }
-              };
+                  const newObj = RichiestaService._nuovoVecchio(responseOriginale[keyResponseOriginale], responseNuova[keyResponseOriginale]);
+                  console.log(newObj);
+
+                  break;
+                case 'boolean':
+                case 'number':
+                case 'string':
+                  /**
+                   * In questo caso abbiamo un object da valutare, inserendo un nuovo elemento o un vecchio elemento
+                   */
+                  responseOriginale = {
+                    ...responseOriginale, [keyResponseOriginale]: {
+                      Vecchio: responseOriginale[keyResponseOriginale],
+                      // @ts-ignore
+                      Nuovo: responseNuova[keyResponseOriginale]
+                    }
+                  };
+                  break;
+                case 'function':
+                  break;
+                case 'symbol':
+                  break;
+                case 'bigint':
+                  break;
+              }
+
             }
           } else {
             /**
@@ -161,4 +209,9 @@ export class RichiestaService {
     );
   }
 
+  private _forItem<T>(responseOriginaleElement: T) {
+    for (const responseOriginaleElementKey in responseOriginaleElement) {
+
+    }
+  }
 }
