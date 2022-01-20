@@ -13,6 +13,7 @@ export class AppComponent {
     readonly service: RichiestaService
   ) {
     // service.richiesta('getRegistrazione').subscribe(console.dir);
-    service.richiestaFor('getRegistrazione', 'getRegistrazioneUno').subscribe(console.dir);
+    // service.richiestaFor('getRegistrazione', 'getRegistrazioneUno', false, 'dto', 'dati-completi-oe').subscribe(console.dir);
+    service.richiestaFor('dichiarazione', 'dichiarazione2', true).subscribe(console.dir);
   }
 }

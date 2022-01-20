@@ -1,0 +1,47 @@
+{
+
+  "capacitaEconomica": [
+    {
+      "id": "340",
+      "idParent": "320",
+      "relazioneFK": "593",
+      "anno": "2021",
+      "valore2": null,
+      "flgNuova": true
+    }
+  ],
+  "listaSocietaControllate": [],
+  "listaSocietaControllanti": [],
+  "flagLavoroDisabili": true,
+  "listaIstitutiBancari": [
+    {
+      "id": "190",
+      "idParent": "173",
+      "iban": "SAN PAOLO",
+      "denominazione": "INTESA SANPAOLO SPA / Filiale n. 1 / Via dell’Arte 78 – Roma - 00144 RM"
+    }
+  ],
+  "listaTitolari": [
+    {
+      "id": "168",
+      "desNome": "*Nessun Dato*",
+      "desCognome": "*Nessun Dato*",
+      "dataNascita": "14/01/2022",
+      "desQuoteSociali": "0"
+    },
+    {
+      "id": "190",
+      "idParent": "170",
+      "desNome": "GAETANO",
+      "desCognome": "SABINO",
+      "dataNascita": "14/01/2022",
+      "desQuoteSociali": "15"
+    }
+  ],
+  "datiAggiuntivi": {
+    "id": "139",
+    "capitaleSociale": "123456",
+    "tipoContratto": "contratto modificato",
+    "dettaglioContratto": "dettaglio modificato"
+  }
+}

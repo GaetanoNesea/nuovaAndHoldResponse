@@ -68,7 +68,7 @@ export class RichiestaService {
     return this.http.get<T>(`./assets/${name}.json`).pipe(
       map(result => {
         let obj: T;
-        if (typeof result === 'object' && arg.length > 0) {
+        if (typeof result === 'object' && !!arg && arg.length > 0) {
           for (let i = 0; i < arg.length; i++) {
             if (!obj) {
               obj = result[arg[i]];
@@ -85,11 +85,12 @@ export class RichiestaService {
   }
 
 
-  public richiestaFor<A, B>(primoObj: string, secondoObj: string): Observable<{ responseOriginale: A, responseNuova: B }> {
+  /** La response deve essere un dto completo per il momento, nel caso di registrazione dobbiamo inserire i params per farlo funzionare */
+  public richiestaFor<A, B>(primoObj: string, secondoObj: string, albo = true, ...arg: string[]): Observable<{ responseOriginale: A, responseNuova: B }> {
     return forkJoin(
       {
-        responseOriginale: this.richiesta(primoObj, 'dto', 'dati-completi-oe'),
-        responseNuova: this.richiesta(secondoObj, 'dto', 'dati-completi-oe')
+        responseOriginale: this.richiesta(primoObj, ...arg),
+        responseNuova: this.richiesta(secondoObj, ...arg)
       }
     ).pipe(
       map(({responseOriginale, responseNuova}: { responseOriginale: A, responseNuova: B }) => {
@@ -117,6 +118,7 @@ export class RichiestaService {
                 // @ts-ignore
               const arrayModificato = (responseOriginale[keyResponseOriginale]).map((item, index) => {
 
+
                   if (!isArray(item)) {
 
                     /** Troviamo la key all'interno del item */
@@ -124,15 +126,15 @@ export class RichiestaService {
 
                     /** Cerchiamo nella seconda response se esiste un item con lo stesso id, significa ch'è stato modificato */
                       // @ts-ignore
-                    const itemModificato = responseNuova[keyResponseOriginale].find((itemSecondo) => itemSecondo[key] === item[key]);
+                    const itemModificato = responseNuova[keyResponseOriginale].find((itemSecondo) => itemSecondo[albo ? `${key}Parent` : key] === item[key]);
 
                     /**
                      * All'inizio abbiamo creato una lista vuota, in questo caso verifichiamo che la lista è vuota, nel caso che lo fosse la
                      * andiamo a riempire con il primo filtro dalla secondaResponse e successivamente elimineremo altri elementi
                      */
-                    if (newItemModifica.length === 0) {
+                    if (newItemModifica.length === 0 && !index ) {
                       // @ts-ignore
-                      newItemModifica = [...responseNuova[keyResponseOriginale].filter(itemSecondo => itemSecondo[key] !== item[key])];
+                      newItemModifica = [...responseNuova[keyResponseOriginale].filter(itemSecondo => itemSecondo[albo ? `${key}Parent` : key] !== item[key])];
                     } else {
                       newItemModifica = newItemModifica.filter(itemnew => itemnew[key] !== item[key]);
                     }

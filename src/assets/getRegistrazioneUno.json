@@ -1,63 +1,161 @@
 {
-  "dto":
-  {
-    "result":
-    {
+  "dto": {
+    "result": {
       "result": "SUCCESS"
     },
-    "dati-completi-oe":
-    {
-      "piva": "03312030657 modificato ",
-      "codiceFiscale": "03312030657 modificato ",
-      "dataIscrizioneRegImprese": "2020-01-01 modificato ",
-      "dataTermineSoc": "2025-01-0 modificato 1",
-      "estremiIscrizioneCassaEdile": "da alfa a omeg modificato a",
-      "estremiIscrizioneINAIL": "da 0 a 9 modificato ",
-      "estremiIscrizioneINPS": "dalla A all modificato a Z",
-      "idOE": "444",
-      "iscrizioneCassaEdile": "25",
-      "iscrizioneINAIL": "25",
-      "iscrizioneINPS": "25",
-
-      "sedePrincipale":
-      {
-        "cap": "00200",
-        "citta": "101005",
-        "idIndirizzo": "415",
-        "indirizzo": "VIA RE",
-        "nazione": "IT",
-        "ncivico": "2",
-        "provincia": "105"
-      },
-      "sedeRegistroImprese": "ROMA",
-      "sediSecondarie":
-      [
-        {
-          "cap": "00567",
-          "citta": "058003",
-          "idIndirizzo": "1214",
-          "indirizzo": "Via Pluto",
-          "nazione": "IT",
-          "ncivico": "33",
-          "provincia": "058"
-        },
-        {
-          "cap": "00234",
-          "citta": "058036",
-          "idIndirizzo": "1253",
-          "indirizzo": "via pippo",
-          "nazione": "IT",
-          "ncivico": "32",
-          "provincia": "058"
-        }
+    "dati-completi-oe": {
+      "piva": null,
+      "codiceFiscale": null,
+      "cognomeProf": null,
+      "dataIscrizioneRegImprese": null,
+      "dataTermineSoc": null,
+      "estremiIscrizioneCassaEdile": null,
+      "estremiIscrizioneINAIL": null,
+      "estremiIscrizioneINPS": null,
+      "fax": null,
+      "hasSediSecondarie": null,
+      "idOE": "1271",
+      "iscrizioneCassaEdile": null,
+      "iscrizioneINAIL": null,
+      "iscrizioneINPS": null,
+      "listaAlbi": [
       ],
-      "telefono": "54545454545",
+      "listaConsorzi": [
+      ],
+      "listaConsorziate": [
+      ],
+      "motiviEsclusione": {
+        "art80SezioneA": {
+          "desA307effettivaDissociazione": null,
+          "flaA304RisarcimentoDanno": null,
+          "flagA302AttenuanteCollaborazione": null,
+          "flg306MisureTecniche": null,
+          "flgA301MisureAffidabilita": null,
+          "flgA303PenaDetentiva": null,
+          "flgA305ImpegnoRisarcimentoDanno": null,
+          "idSezioneA": "990"
+        },
+        "art80SezioneBContributiPrevidenziali": {
+          "datB2012DataSentenza": null,
+          "desB203Testo": null,
+          "desB204InformazioniDettagliate": null,
+          "flaB2011Decisione": null,
+          "flgB101TipologiaPagamento": null,
+          "flgB201Inottemperanza": null,
+          "flgB204OttemperamentoObblighi": null,
+          "idSezioneB": "979",
+          "nazioneB101": null,
+          "numB101Importo": null,
+          "numB20231PeriodoEsclusioneAnni": null,
+          "numB20232PeriodoEsclusioneMesi": null,
+          "numB20233PeriodoEsclusioneGiorni": null
+        },
+        "art80SezioneBImposteTasse": {
+          "datB2012DataSentenza": null,
+          "desB203Testo": null,
+          "desB204InformazioniDettagliate": null,
+          "flaB2011Decisione": null,
+          "flgB101TipologiaPagamento": null,
+          "flgB201Inottemperanza": null,
+          "flgB204OttemperamentoObblighi": null,
+          "idSezioneB": "980",
+          "nazioneB101": null,
+          "numB101Importo": null,
+          "numB20231PeriodoEsclusioneAnni": null,
+          "numB20232PeriodoEsclusioneMesi": null,
+          "numB20233PeriodoEsclusioneGiorni": null
+        },
+        "art80SezioneC": {
+          "desC105": null,
+          "desC202": null,
+          "desC203": null,
+          "desC208": null,
+          "desC301": null,
+          "desC303": null,
+          "desC401": null,
+          "desC501": null,
+          "flgC101": null,
+          "flgC102": null,
+          "flgC103": null,
+          "flgC104": null,
+          "flgC105": null,
+          "flgC201": null,
+          "flgC202": null,
+          "flgC203": null,
+          "flgC204": null,
+          "flgC205": null,
+          "flgC206": null,
+          "flgC207": null,
+          "flgC208": null,
+          "flgC301": null,
+          "flgC302": null,
+          "flgC3021": null,
+          "flgC3022": null,
+          "flgC303": null,
+          "flgC401": null,
+          "flgC501": null,
+          "flgC601": null,
+          "flgC602": null,
+          "idSezioneC": "910"
+        },
+        "art80SezioneD": {
+          "datD104": null,
+          "desAltro105": null,
+          "desAutoritaD104": null,
+          "desD104": null,
+          "flgD101": null,
+          "flgD102": null,
+          "flgD103": null,
+          "flgD104": null,
+          "flgD105": null,
+          "flgD106": null,
+          "flgD1061": null,
+          "flgD1062": null,
+          "flgD107": null,
+          "flgD108": null,
+          "flgRimossaD104": null,
+          "idSezioneD": "909",
+          "numD105": null
+        },
+        "listaDocumenti": [
+        ],
+        "listaDocumentiRimossi": [
+        ]
+      },
+      "nomeProf": null,
+      "numIscrizioneRegImprese": null,
+      "oggettoSociale": null,
+      "pIva": null,
+      "pec": null,
+      "prefissoFax": null,
+      "prefissoTelefono": null,
+      "ragioneSociale": "umana spa test modifica",
+      "rapprDirTecniciCessati": [
+      ],
+      "rapprDirTecniciInCarica": [
+      ],
+      "sedePrincipale": {
+        "cap": null,
+        "citta": null,
+        "cittatxtlibero": null,
+        "idIndirizzo": "1239",
+        "indirizzo": null,
+        "nazione": null,
+        "ncivico": null,
+        "provincia": null
+      },
+      "sedeRegistroImprese": null,
+      "sediSecondarie": [
+      ],
+      "sitoInternet": null,
+      "telefono": null,
       "termineSocIndeterminato": false,
-      "tipoConsorzio": "000001",
-      "tipoImpresa": "N",
-      "tipoOE": "OE0004",
-      "hasCondanneScadute": "false",
-      "tipoStatoLavor": "OEBASE"
+      "tipoConsorzio": null,
+      "tipoImpresa": null,
+      "tipoOE": null,
+      "tipoStatoLavor": "OEBASE",
+      "tipoTitolo": null,
+      "titololibero": null
     }
   }
 }

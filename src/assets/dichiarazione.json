@@ -1,0 +1,69 @@
+{
+    "firmatari":
+    [],
+    "capacitaEconomica":
+    [
+        {
+            "id": "320",
+            "relazioneFK": "593",
+            "anno": "2020",
+            "valore": "850151",
+            "valore2": null,
+            "flgNuova": true
+        },
+        {
+            "id": "321",
+            "relazioneFK": "593",
+            "anno": "2019",
+            "valore": "1050193",
+            "valore2": null,
+            "flgNuova": true
+        },
+        {
+            "id": "322",
+            "relazioneFK": "593",
+            "anno": "2018",
+            "valore": "762742",
+            "valore2": null,
+            "flgNuova": true
+        }
+    ],
+    "listaSocietaControllate":
+    [],
+    "listaSocietaControllanti":
+    [],
+    "flagLavoroDisabili": false,
+    "listaIstitutiBancari":
+    [
+        {
+            "id": "173",
+            "iban": "*Nessun Dato*",
+            "denominazione": "INTESA SANPAOLO SPA / Filiale n. 1 / Via dell’Arte 68 – Roma - 00144 RM"
+        }
+    ],
+    "listaTitolari":
+    [
+        {
+            "id": "168",
+            "desNome": "*Nessun Dato*",
+            "desCognome": "*Nessun Dato*",
+            "dataNascita": "14/01/2022",
+            "desQuoteSociali": "0"
+        },
+        {
+            "id": "167",
+            "desNome": "*Nessun Dato*",
+            "desCognome": "*Nessun Dato*",
+            "dataNascita": "14/01/2022",
+            "desQuoteSociali": "0"
+        }
+    ],
+    "datiAggiuntivi":
+    {
+        "id": "139",
+        "capitaleSociale": "10000",
+        "capitaleVersato": "10000",
+        "tipoContratto": "contratto",
+        "dettaglioContratto": "dettaglio"
+    }
+}
